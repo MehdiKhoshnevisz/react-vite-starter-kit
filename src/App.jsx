@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router';
 
-import routes from './router';
+import routes from './routes';
 
 function App() {
   return (
