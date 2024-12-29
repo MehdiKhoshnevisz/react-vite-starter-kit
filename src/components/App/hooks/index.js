@@ -1,13 +1,32 @@
 import Index from '@/app/index';
 import NotFound from '@/app/not-found';
-import LayoutPure from '@/components/Layouts/LayoutPure';
+import Materials from '@/app/Materials';
+import ProductionLine from '@/app/production-line';
+import ProductionLineDetails from '@/app/production-line-details';
+
+import Layout from '@/components/Layout';
 
 const useApp = () => {
   const routes = [
     {
       path: '/',
       element: Index,
-      layout: LayoutPure
+      layout: Layout
+    },
+    {
+      path: '/production-line',
+      element: ProductionLine,
+      layout: Layout
+    },
+    {
+      path: '/production-line-details/:id',
+      element: ProductionLineDetails,
+      layout: Layout
+    },
+    {
+      path: '/materials',
+      element: Materials,
+      layout: Layout
     },
     {
       path: '*',
