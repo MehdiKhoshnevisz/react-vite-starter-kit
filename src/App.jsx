@@ -1,10 +1,8 @@
-import { Routes, Route } from 'react-router';
-import useApp from './hooks';
 import React from 'react';
+import { Routes, Route } from 'react-router';
+import routes from '@/routes';
 
 function App() {
-  const { routes } = useApp();
-
   return (
     <Routes>
       {routes.map((route, index) => {
