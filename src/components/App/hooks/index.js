@@ -1,17 +1,17 @@
-import React from 'react';
-
 import Index from '@/app/index';
 import NotFound from '@/app/not-found';
+import LayoutPure from '@/components/Layouts/LayoutPure';
 
 const useApp = () => {
   const routes = [
     {
       path: '/',
-      element: React.createElement(Index)
+      element: Index,
+      layout: LayoutPure
     },
     {
       path: '*',
-      element: React.createElement(NotFound)
+      element: NotFound
     }
   ];
 
