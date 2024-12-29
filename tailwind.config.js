@@ -1,6 +1,6 @@
 import { nextui } from '@nextui-org/react';
 
-import { screens, borderRadius, colors } from './src/configs/theme';
+import { screens, borderRadius, colors } from './src/theme';
 
 export default {
   content: [
