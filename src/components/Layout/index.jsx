@@ -1,20 +1,18 @@
-import { Link } from 'react-router';
+import Header from './Header';
+import Sidebar from './Sidebar';
 
-function Layout({ children }) {
+const Layout = props => {
+  const { children } = props;
+
   return (
-    <div>
-      <aside className="p-4">
-        <Link to="/production-line" className="block">
-          <span>خط تولید</span>
-        </Link>
-        <Link to="/materials" className="block">
-          <span>مواد اولیه</span>
-        </Link>
-      </aside>
-
-      {children}
+    <div className="min-h-screen">
+      <Header />
+      <div className="flex">
+        <Sidebar />
+        <div className="flex-[6]">{children}</div>
+      </div>
     </div>
   );
-}
+};
 
 export default Layout;
