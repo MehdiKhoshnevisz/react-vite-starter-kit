@@ -1,8 +1,8 @@
 export default {
-  primary: '#E94C1E',
-  secondary: '#C33B13',
-  error: '#D61600',
+  primary: '#2B70C9',
+  secondary: '#BCD3ED',
+  error: '#FF4B4B',
   warning: '#FFA200',
-  info: '#2B93F3',
-  success: '#3C9A4F'
+  info: '#1F4F8E',
+  success: '#43C000'
 };
