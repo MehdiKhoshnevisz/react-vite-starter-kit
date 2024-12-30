@@ -3,32 +3,28 @@ import NotFound from '@/app/not-found';
 import Materials from '@/app/Materials';
 import ProductionLine from '@/app/production-line';
 import ProductionLineDetails from '@/app/production-line-details';
-
-import Layout from '@/components/Layout';
+import LayoutPure from '@/components/LayoutPure';
 
 export default [
   {
     path: '/',
-    element: Index,
-    layout: Layout
-  },
-  {
-    path: '/production-line',
-    element: ProductionLine,
-    layout: Layout
-  },
-  {
-    path: '/production-line-details/:id',
-    element: ProductionLineDetails,
-    layout: Layout
-  },
-  {
-    path: '/materials',
-    element: Materials,
-    layout: Layout
+    element: Index
   },
   {
     path: '*',
-    element: NotFound
+    element: NotFound,
+    layout: LayoutPure
+  },
+  {
+    path: '/production-line',
+    element: ProductionLine
+  },
+  {
+    path: '/production-line-details/:id',
+    element: ProductionLineDetails
+  },
+  {
+    path: '/materials',
+    element: Materials
   }
 ];
